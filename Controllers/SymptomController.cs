@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using PersonalizedHealthCenter.Models;
 using PersonalizedHealthCenter.Services;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace PersonalizedHealthCenter.Controllers
@@ -19,57 +20,26 @@ namespace PersonalizedHealthCenter.Controllers
         [HttpGet]
         public async Task<List<Symptom>> Get()
         {
-            return await _symptomService.GetAsync();
+            return await _symptomService.GetAllAsync();
         }
 
-        [HttpGet("{id}")]
-        public async Task<IActionResult> GetById(string id)
+        [HttpGet("{name}")]
+        public async Task<IActionResult> GetByName(string name)
         {
-            var symptom = await _symptomService.GetByIdAsync(id);
+            var symptoms = await _symptomService.GetByNameAsync(name);
 
-            if (symptom == null)
+            if (symptoms == null || symptoms.Count == 0)
             {
                 return NotFound();
             }
 
-            return Ok(symptom);
+            return Ok(symptoms);
         }
-
         [HttpPost]
         public async Task<IActionResult> Post([FromBody] Symptom symptom)
         {
             await _symptomService.CreateAsync(symptom);
             return CreatedAtAction(nameof(Get), new { id = symptom.Id }, symptom);
-        }
-
-        [HttpPut("{id}")]
-        public async Task<IActionResult> Put(string id, [FromBody] Symptom updatedSymptom)
-        {
-            var existingSymptom = await _symptomService.GetByIdAsync(id);
-
-            if (existingSymptom == null)
-            {
-                return NotFound();
-            }
-
-            await _symptomService.UpdateAsync(id, updatedSymptom);
-
-            return NoContent();
-        }
-
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> Delete(string id)
-        {
-            var symptom = await _symptomService.GetByIdAsync(id);
-
-            if (symptom == null)
-            {
-                return NotFound();
-            }
-
-            await _symptomService.DeleteAsync(id);
-
-            return NoContent();
         }
     }
 }

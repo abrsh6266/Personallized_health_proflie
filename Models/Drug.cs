@@ -4,17 +4,19 @@ using MongoDB.Bson.Serialization.Attributes;
 
 namespace PersonalizedHealthCenter.Models
 {
-    public class Symptom
+    public class Drug
     {
         [BsonId]
         [BsonRepresentation(BsonType.ObjectId)]
         public string? Id { get; set; }
 
         public string? Name { get; set; }
-        public string? Description { get; set; }
+        public string? Category { get; set; }
+        public string? Usage { get; set; }
+        public List<string>? SideEffects { get; set; }
+        public string? DosageForm { get; set; }
+        public string? Manufacturer { get; set; }
         public string? ThumbnailUrl { get; set; }
-        public List<string>? Treatment { get; set; }
-        public string? Duration { get; set; }
-        public List<string>? Prevention { get; set; }
+        public string? Description { get; set; }
     }
 }

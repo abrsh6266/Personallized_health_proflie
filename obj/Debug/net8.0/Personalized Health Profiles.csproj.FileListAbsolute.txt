@@ -52,3 +52,4 @@ C:\Users\Abrham\Documents\vs code\dot net\Personalized Health Profiles\obj\Debug
 C:\Users\Abrham\Documents\vs code\dot net\Personalized Health Profiles\obj\Debug\net8.0\Personalized Health Profiles.pdb
 C:\Users\Abrham\Documents\vs code\dot net\Personalized Health Profiles\obj\Debug\net8.0\Personalized Health Profiles.genruntimeconfig.cache
 C:\Users\Abrham\Documents\vs code\dot net\Personalized Health Profiles\obj\Debug\net8.0\ref\Personalized Health Profiles.dll
+C:\Users\Abrham\Documents\vs code\dot net\Personalized Health Profiles\obj\Debug\net8.0\Personalized Health Profiles.sourcelink.json

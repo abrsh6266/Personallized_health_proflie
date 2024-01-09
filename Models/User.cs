@@ -10,7 +10,6 @@ namespace PersonalizedHealthCenter.Models
         public string Id { get; set; } = null!;
         public string? Username { get; set; }
         public string? PasswordHash { get; set; }
-        public List<string>? Roles { get; set; }
         public List<ChatMessage>? ChatHistory { get; set; }
     }
 }

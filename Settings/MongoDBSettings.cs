@@ -7,7 +7,7 @@ namespace PersonalizedHealthCenter.Settings
         public string HealthProfileCollectionName { get; set; } = null!;
         public string UserCollectionName { get; set; } = null!;
         public string SymptomCollectionName { get; set; } = null!;
-        public string ChatMessageCollectionName { get; set; } = null!;
-        public string MedicationCollectionName { get; set; } = null!;
+        public string DrugCollectionName { get; set; } = null!;
+        public string DiseaseCollectionName { get; set; } = null!;
     }
 }

@@ -11,11 +11,10 @@ builder.Services.Configure<MongoDBSettings>(builder.Configuration.GetSection("Mo
 builder.Services.AddControllers();
 builder.Services.AddControllers().AddJsonOptions(x =>
                 x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);
-builder.Services.AddSingleton<HealthProfileService>();
+builder.Services.AddSingleton<DrugService>();
 builder.Services.AddSingleton<UserService>();
 builder.Services.AddSingleton<SymptomService>();
-builder.Services.AddSingleton<ChatMessageService>();
-builder.Services.AddSingleton<MedicationService>();
+builder.Services.AddSingleton<DiseaseService>();
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
