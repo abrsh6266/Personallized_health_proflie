@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Abrham\\Documents\\vs code\\dot net\\Personalized Health Profiles\\Personalized Health Profiles.csproj": {}
+    "C:\\Users\\Abrham\\Desktop\\Personallized_health_proflie\\Personalized Health Profiles.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Abrham\\Documents\\vs code\\dot net\\Personalized Health Profiles\\Personalized Health Profiles.csproj": {
+    "C:\\Users\\Abrham\\Desktop\\Personallized_health_proflie\\Personalized Health Profiles.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Abrham\\Documents\\vs code\\dot net\\Personalized Health Profiles\\Personalized Health Profiles.csproj",
+        "projectUniqueName": "C:\\Users\\Abrham\\Desktop\\Personallized_health_proflie\\Personalized Health Profiles.csproj",
         "projectName": "Personalized Health Profiles",
-        "projectPath": "C:\\Users\\Abrham\\Documents\\vs code\\dot net\\Personalized Health Profiles\\Personalized Health Profiles.csproj",
+        "projectPath": "C:\\Users\\Abrham\\Desktop\\Personallized_health_proflie\\Personalized Health Profiles.csproj",
         "packagesPath": "C:\\Users\\Abrham\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Abrham\\Documents\\vs code\\dot net\\Personalized Health Profiles\\obj\\",
+        "outputPath": "C:\\Users\\Abrham\\Desktop\\Personallized_health_proflie\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Abrham\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -38,6 +38,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "AspNetCore.Identity.Mongo": {
+              "target": "Package",
+              "version": "[8.3.3, )"
+            },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
               "version": "[8.0.0, )"
@@ -47,6 +51,10 @@
               "version": "[8.0.0, )"
             },
             "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.23.1, )"
+            },
+            "MongoDB.Driver.Core": {
               "target": "Package",
               "version": "[2.23.1, )"
             },

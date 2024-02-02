@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "M95uuAmOd0noNi+gpYqJCwAt6SKy6SGF7wTGTSOdadFHgn/YUPhMrfxNcPwSly7Ks5Yd4i/ZH1XaXzmTGIwq3w==",
+  "dgSpecHash": "gOyiE9QHpdownGT/mFCktdB+jygmjEROHCv8gsN0GL4mINF2MBJyNYK8vYfGIY3ezszdVWE5F0i6r26pK6AlJA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Abrham\\Documents\\vs code\\dot net\\Personalized Health Profiles\\Personalized Health Profiles.csproj",
+  "projectFilePath": "C:\\Users\\Abrham\\Desktop\\Personallized_health_proflie\\Personalized Health Profiles.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Abrham\\.nuget\\packages\\aspnetcore.identity.mongo\\8.3.3\\aspnetcore.identity.mongo.8.3.3.nupkg.sha512",
     "C:\\Users\\Abrham\\.nuget\\packages\\awssdk.core\\3.7.100.14\\awssdk.core.3.7.100.14.nupkg.sha512",
     "C:\\Users\\Abrham\\.nuget\\packages\\awssdk.securitytoken\\3.7.100.14\\awssdk.securitytoken.3.7.100.14.nupkg.sha512",
     "C:\\Users\\Abrham\\.nuget\\packages\\dnsclient\\1.6.1\\dnsclient.1.6.1.nupkg.sha512",
@@ -38,5 +39,26 @@
     "C:\\Users\\Abrham\\.nuget\\packages\\system.security.principal.windows\\5.0.0\\system.security.principal.windows.5.0.0.nupkg.sha512",
     "C:\\Users\\Abrham\\.nuget\\packages\\zstdsharp.port\\0.7.3\\zstdsharp.port.0.7.3.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1902",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'System.IdentityModel.Tokens.Jwt' 7.0.3 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-59j7-ghrg-fj52",
+      "libraryId": "System.IdentityModel.Tokens.Jwt",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1902",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'System.IdentityModel.Tokens.Jwt' 7.0.3 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-8g9c-28fc-mcx2",
+      "libraryId": "System.IdentityModel.Tokens.Jwt",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
 }

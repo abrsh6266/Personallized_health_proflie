@@ -1,8 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using PersonalizedHealthCenter.Models;
 using PersonalizedHealthCenter.Services;
-using System.Collections.Generic;
-using System.Threading.Tasks;
 
 namespace PersonalizedHealthCenter.Controllers
 {
