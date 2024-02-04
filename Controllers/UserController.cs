@@ -1,4 +1,4 @@
-using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc; 
 using PersonalizedHealthCenter.Models;
 using PersonalizedHealthCenter.Services;
 using System.Collections.Generic;
@@ -29,7 +29,7 @@ namespace PersonalizedHealthCenter.Controllers
             var user = await _userService.GetUserByIdAsync(id);
 
             if (user == null)
-            {
+            {   
                 return NotFound();
             }
 

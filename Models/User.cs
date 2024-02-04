@@ -1,12 +1,9 @@
-using AspNetCore.Identity.MongoDbCore.Models;
 using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
-using MongoDbGenericRepository.Attributes;
 
 namespace PersonalizedHealthCenter.Models
 {
-    [CollectionName("users")]
-    public class User: MongoIdentityUser<Guid>
+    public class User
     {
         [BsonId]
         [BsonRepresentation(BsonType.ObjectId)]
